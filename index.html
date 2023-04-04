@@ -21,6 +21,7 @@
         <select id="my-stock-selector">
             <option value="MSFT" selected>Microsoft (MSFT)</option>
             <option value="GOOG">Google (GOOGL)</option>
+            <option value="SPY">SP500 ETF (SPY)</option>
             <option value="AAPL">Apple (AAPL)</option>
             <option value="TSLA">Tesla (TSLA)</option>
         </select>
@@ -110,10 +111,10 @@
 
 
         // trigger an initial chart update when the page loads:
-        //updateDashboard()
+        updateDashboard()
 
         // trigger a subsequent chart update whenever the button is clicked:
-        //myButton.addEventListener("click", updateDashboard, false)
+        myButton.addEventListener("click", updateDashboard, false)
 
 
 
